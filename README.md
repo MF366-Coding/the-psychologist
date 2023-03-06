@@ -1,2 +1,7 @@
-# the-psychologist
-This is The Psychologist's repo (game). 
+# The Psychologist
+The game. The repo. 
+
+# WARNING! 
+This game may contain disturbing content.
+
+
