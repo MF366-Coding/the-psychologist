@@ -10,4 +10,4 @@
 
 # Thanks for downloading this project.
 
-# We'll be adding mroe stuff so don't worry! 
+# We'll be adding more stuff so don't worry! 
