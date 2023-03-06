@@ -1,7 +1,14 @@
+
+# The Psychologist
+
 # By MF366 and Norb
+
+# To play, type the command that replies to the question or obaervation. 
+
 # If you use this project, please identify us as the main project's creators.
 
 # WARNING!
+
 # This game may contain disturbing stuff happening.
 
 # Repo available at: https://github.com/MF366-Coding
@@ -11,3 +18,17 @@
 # Thanks for downloading this project.
 
 # We'll be adding more stuff so don't worry! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
