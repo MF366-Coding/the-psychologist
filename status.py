@@ -32,7 +32,7 @@ class Status:
     
     class Health:
         meter = 150
-        lifeString = str(maxim)
+        lifeString = str(meter)
         full = str("Health: "+lifeString+" HP\n")
         
     class Rage:
@@ -43,10 +43,19 @@ class Status:
         meter = False
         full = str("Hungry? "+meter+'\n')
         
-    # Still gonna add much more :D
+    # Not sure if we are gonna add new stuff :D
         
 def statusEdit(amount, change):
     if change == 1:
         if amount == 0:
-            pass
-    
+            Status.Rage.meter = False
+        else:
+            Status.Rage.meter = True
+    elif change == 2:
+        Status.Health.meter += amount
+    elif change == 3:
+        if amount == 0:
+            Status.Hunger.meter = False
+        else:
+            Status.Hunger.meter = True
+        
