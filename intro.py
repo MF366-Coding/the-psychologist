@@ -13,7 +13,48 @@
 
 # Thanks for downloading this project.
 
-""" ! <we'll be adding more stuff so don't worry> ! """
-""" xD """
+from clsCmd import clear
+import wrongInput
+import gameOver
+import status
+import chapter1
 
+def skip():
+    clear()
+    chapter1.phase1.nothing()
 
+def watchIntro():
+    clear()
+    input("Hit ENTER to continue every time you finish reading a sentence.")
+    clear()
+    input("In a small village, there was a boy.")
+    clear()
+    input("His name was "+status.Status.Names.Player.name+".\n"+status.Status.Names.Player.full)
+    clear()
+    input("He lost his father when he was 2.")
+    clear()
+    input("What the heck am I doing?")
+    clear()
+    input("Talking about him while talking to him...")
+    clear()
+    input("Yes, Peter! I am your new Psychologist!")
+    clear()
+    input("And I think we'll do great in our sessions! Or else...")
+    clear()
+    askForContinue = input("Click ENTER to continue to chapter 1 or type 'quit' to quit the game.")
+    if askForContinue == 'quit':
+        clear()
+        print("\nApp quitted by player's wish.\n")
+        quit()
+    else:
+        chapter1.phase1.nothing()
+
+clear()
+askForSkip = str(input("Skip intro?\n\t[Y]es\n\t[N]o\n\nType cmd: "))
+
+if askForSkip == 'y' or askForSkip == 'Y':
+    skip()
+elif askForSkip == 'n' or askForSkip == 'N':
+    watchIntro()
+else:
+    wrongInput.run()

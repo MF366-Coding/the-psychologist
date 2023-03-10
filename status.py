@@ -1,7 +1,10 @@
 
 # The Status Module
 
+from gameOver import run
 from clsCmd import clear
+
+mainlooping = True
 
 class Status:
     class Names:
@@ -37,11 +40,13 @@ class Status:
         
     class Rage:
         meter = False
-        full = str("In rage? "+meter+"\n")
+        meterString = str(meter)
+        full = str("In rage? "+meterString+"\n")
         
     class Hunger:
         meter = False
-        full = str("Hungry? "+meter+'\n')
+        hungerString = str(meter)
+        full = str("Hungry? "+hungerString+'\n')
         
     # Not sure if we are gonna add new stuff :D
         
@@ -58,4 +63,9 @@ def statusEdit(amount, change):
             Status.Hunger.meter = False
         else:
             Status.Hunger.meter = True
-        
+
+def healthCheck():
+    while mainlooping:
+        if Status.Health.meter < 1:
+            break
+            run()
