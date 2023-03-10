@@ -64,8 +64,7 @@ def statusEdit(amount, change):
         else:
             Status.Hunger.meter = True
 
-def healthCheck():
-    while mainlooping:
-        if Status.Health.meter < 1:
-            break
-            run()
+while mainlooping:
+    if Status.Health.meter < 1:
+        break
+        run()

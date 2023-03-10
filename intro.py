@@ -21,7 +21,7 @@ import chapter1
 
 def skip():
     clear()
-    chapter1.phase1.nothing()
+    chapter1.phase1.run()
 
 def watchIntro():
     clear()
@@ -47,7 +47,7 @@ def watchIntro():
         print("\nApp quitted by player's wish.\n")
         quit()
     else:
-        chapter1.phase1.nothing()
+        chapter1.phase1.run()
 
 clear()
 askForSkip = str(input("Skip intro?\n\t[Y]es\n\t[N]o\n\nType cmd: "))
