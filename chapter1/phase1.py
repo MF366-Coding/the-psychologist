@@ -1,7 +1,6 @@
 
 # At home
 
-import chapter2
 import phase2
 import gameOver
 import wrongInput

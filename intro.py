@@ -17,11 +17,11 @@ from clsCmd import clear
 import wrongInput
 import gameOver
 import status
-import chapter1
+from chapter1 import phase1
 
 def skip():
     clear()
-    chapter1.phase1.run()
+    phase1.run()
 
 def watchIntro():
     clear()
@@ -47,14 +47,15 @@ def watchIntro():
         print("\nApp quitted by player's wish.\n")
         quit()
     else:
-        chapter1.phase1.run()
+        phase1.run()
 
-clear()
-askForSkip = str(input("Skip intro?\n\t[Y]es\n\t[N]o\n\nType cmd: "))
+if __name__ == '__main__':
+    clear()
+    askForSkip = str(input("Skip intro?\n\t[Y]es\n\t[N]o\n\nType cmd: "))
 
-if askForSkip == 'y' or askForSkip == 'Y':
-    skip()
-elif askForSkip == 'n' or askForSkip == 'N':
-    watchIntro()
-else:
-    wrongInput.run()
+    if askForSkip == 'y' or askForSkip == 'Y':
+        skip()
+    elif askForSkip == 'n' or askForSkip == 'N':
+        watchIntro()
+    else:
+        wrongInput.run()
