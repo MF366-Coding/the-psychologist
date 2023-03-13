@@ -4,7 +4,7 @@
 # If you use this project, please identify us as the main project's creators.
 # Repo available at: https://github.com/MF366-Coding
 
-# To play, type the command that replies to the question or obaervation. 
+# To play, type the command that replies to the question or observation.
 
 # WARNING!
 # This game may contain disturbing stuff happening.
@@ -44,7 +44,7 @@ def watchIntro():
     askForContinue = input("Click ENTER to continue to chapter 1 or type 'quit' to quit the game.")
     if askForContinue == 'quit':
         clear()
-        print("\nApp quitted by player's wish.\n")
+        print("\nApp quited by player's wish.\n")
         quit()
     else:
         phase1.run()
